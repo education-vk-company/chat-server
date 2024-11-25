@@ -1,0 +1,6 @@
+__pycache__
+.mediafiles
+.staticfiles
+.development
+.venv
+.env
