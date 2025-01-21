@@ -1,0 +1,15 @@
+Django>=5.1,<5.2
+psycopg[binary]>=3.2,<4.0
+Pillow>=10.4,<11.0
+gunicorn>=22.0,<23.0
+
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.30,<0.31
+pydantic>=2.9,<3.0
+python-multipart>=0.0.9,<0.1
+httpx>=0.27,<0.28
+PyJWT>=2.9,<3.0
+asgiref>=3.8,<4.0
+
+celery>=5.4,<6.0
+redis>=5.0,<6.0

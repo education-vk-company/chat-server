@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.egg-info/
+
+backend/media/
+backend/staticfiles/
+
+.DS_Store
+*.log
+
+frontend/
