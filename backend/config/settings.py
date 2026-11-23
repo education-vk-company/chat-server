@@ -114,3 +114,7 @@ CENTRIFUGO_TOKEN_TTL_SECONDS = env("CENTRIFUGO_TOKEN_TTL_SECONDS", "300", cast=i
 MAX_UPLOAD_SIZE_BYTES = env("MAX_UPLOAD_SIZE_BYTES", str(50 * 1024 * 1024), cast=int)
 
 CORS_ALLOWED_ORIGINS = [o.strip() for o in env("CORS_ALLOWED_ORIGINS", "*").split(",") if o.strip()]
+
+# Behind the host nginx TLS terminator Django sees plain HTTP, so the https
+# Origin sent by the browser never matches request.get_host(). Trust it here.
+CSRF_TRUSTED_ORIGINS = [o.strip() for o in env("CSRF_TRUSTED_ORIGINS", "").split(",") if o.strip()]
